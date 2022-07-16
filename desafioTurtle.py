@@ -1,11 +1,13 @@
+### Desafio 2
+
+
 from turtle import Turtle
 
 t = Turtle()
 
 while True:
-    lado = input('\nF:(frente), T:(trás)?\n>')
+    lado = (input('\nF:(frente), T:(trás)?\n>'))
     
-# If forward movements
 #-------------------------------------------------      
     if lado == 'F':
         
@@ -34,9 +36,9 @@ while True:
                 angulo_valido = True   
 
             else:
-                print('\nOPS, DIGITE E para esquerda , D para direita ou N para não rotacionar')
+                print('\nOPS, DIGITE E para esquerda ou D para direita')
                                         
-# if backward movements           
+           
 #--------------------------------------------------   
     if lado == 'T':
         
@@ -64,11 +66,16 @@ while True:
 
             else:
                 print('\nOPS, DIGITE E para esquerda , D para direita ou N para não rotacionar')
-            
+
     if lado not in ('T','F','N'):
-        resposta = input('Valor inválido, deseja continuar no sistema? (Sim ou Não)\n>')
-        if resposta not in ('sim', 's', 'SIM', 'S'):
-            break
+        print('VALOR INVÁLIDO PRESS F:(frente), T:(trás)!\n')
+        
+
+    pergunta = input('Continuar Andando?\n>')
+    if pergunta not in ('sim', 's', 'SIM', 'S'):
+        break
+            
+    
              
 
     
