@@ -34,7 +34,7 @@ while True:
                 angulo_valido = True   
 
             else:
-                print('\nOPS, DIGITE E para esquerda ou D para direita')
+                print('\nOPS, DIGITE E para esquerda , D para direita ou N para não rotacionar')
                                         
 # if backward movements           
 #--------------------------------------------------   
