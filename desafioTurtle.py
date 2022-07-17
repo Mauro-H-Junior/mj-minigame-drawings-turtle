@@ -11,22 +11,26 @@ while True:
 #-------------------------------------------------      
     if lado == 'F':
         
-        pixel_lado = int(input('Quantos pixels devem ser percorridos?\n>'))
+        pixel_lado = int(input(
+            'Quantos pixels devem ser percorridos?\n>'))
 
         angulo_valido = False
         while angulo_valido == False:
 
-            angulo = input('\E:(esquerda), D:(direita), N:(não rotacionar)?\n>')
+            angulo = input(
+                '\E:(esquerda), D:(direita), N:(não rotacionar)?\n>')
                               
             if angulo == 'D':
-                pixel_angulo = int(input('Quantos pixels devem ser rotacionados?\n>'))
+                pixel_angulo = int(input(
+                    'Quantos pixels devem ser rotacionados?\n>'))
                 t.right(pixel_angulo)
                 t.forward(pixel_lado)
                 angulo_valido = True
                 
                             
             elif angulo == 'E':
-                pixel_angulo = int(input('Quantos pixels devem ser rotacionados?\n>'))
+                pixel_angulo = int(input(
+                    'Quantos pixels devem ser rotacionados?\n>'))
                 t.left(pixel_angulo)
                 t.forward(pixel_lado)
                 angulo_valido = True
@@ -42,20 +46,24 @@ while True:
 #--------------------------------------------------   
     if lado == 'T':
         
-        pixel_lado = int(input('Quantos pixels devem ser percorridos?\n>'))
+        pixel_lado = int(input(
+            'Quantos pixels devem ser percorridos?\n>'))
 
         angulo_valido = False
         while angulo_valido == False:
-            angulo = input('\E:(esquerda), D:(direita), N:(não rotacionar)?\n>')
+            angulo = input(
+                '\E:(esquerda), D:(direita), N:(não rotacionar)?\n>')
                         
             if angulo == 'D':                
-                pixel_angulo = int(input('Quantos pixels devem ser rotacionados?\n>'))
+                pixel_angulo = int(input(
+                    'Quantos pixels devem ser rotacionados?\n>'))
                 t.right(pixel_angulo)
                 t.backward(pixel_lado)
                 angulo_valido = True
                             
             elif angulo == 'E':
-                pixel_angulo = int(input('Quantos pixels devem ser rotacionados?\n>'))
+                pixel_angulo = int(input(
+                    'Quantos pixels devem ser rotacionados?\n>'))
                 t.left(pixel_angulo)
                 t.backward(pixel_lado)
                 angulo_valido = True
